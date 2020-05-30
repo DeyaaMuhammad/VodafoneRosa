@@ -1,0 +1,226 @@
+{
+
+  "alertingInquiry": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/subscriptionService/alertingInquiry",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"SubscriptionHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/alertingservices",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"msisdn\":\"[msisdn]\",\"v\":\"3\"}"
+  },
+
+  "alertingSubscribe": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/subscriptionService/alertingSubscribe",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"SubscriptionHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/alertingservices",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"msisdn\":\"[msisdn]\",\"v\":\"3\"}"
+  },
+
+  "getADSLContracts": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/adsl/getADSLContracts",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"ADSLHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/call-details",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"msisdn\":\"[msisdn]\"}"
+  },
+
+  "getAggregatesContractProfile": {
+    "METHOD" : "GET",
+    "URL" : "https://web.vodafone.com.eg/services/getAggregatesContractProfile/[msisdn]",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"RegistrationHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/x-www-form-urlencoded",
+            "Accept":"*/*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+
+        },
+    "PAYLOAD" : ""
+  },
+
+  "getBalance": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/balance/getBalance",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"BalanceHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"msisdn\":\"[msisdn]\"}"
+
+  },
+
+  "getLinkedUSBNumbers": {
+    "METHOD" : "GET",
+    "URL" : "https://web.vodafone.com.eg/services/getLinkedUSBNumbers/[msisdn]",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"USBHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"*/*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : ""
+  },
+
+  "getUsageDetails": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/bills/getUsageDetails",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"BillingHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/call-details",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"mobileNumber\":\"[msisdn]\",\"customerId\":\"[customerId]\",\"usageType\":\"0\",\"voiceFlag\":\"true\",\"smsFlag\":\"true\",\"mmsFlag\":\"true\",\"miFlag\":\"true\",\"videoCallFlag\":\"true\",\"contentFlag\":\"true\",\"callDetailFlag\":\"1\",\"startDate\":\"\",\"endDate\":\"\"}"
+  },
+
+  "getUsageTopRecords": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/getUsageTopRecords",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"TopTenReportsHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"msisdn\":\"[msisdn]\",\"reportType\":\"1\",\"userType\":\"[userType]\",\"billCycleDate\":\"1998-10-24\",\"customerId\":\"[customerId]\"}"
+  },
+
+  "listAccounts": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/account/listAccounts",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"SwitchAccountHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "{\"chennelId\":2,\"channelName\":\"INTERNET\",\"customerId\":\"[customerId]\",\"msisdn\":\"[msisdn]\"}"
+  },
+
+  "listBalanceHistory": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/listBalanceHistory",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"[msisdn]",
+            "api-host":"BalanceTransferHost",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/json",
+            "Accept":"application/json, text/plain, */*",
+            "access-token":"[access-token]",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+
+        },
+    "PAYLOAD" : "{\"startingRow\":\"0\",\"maxRows\":\"10\",\"senderMsisdn\":\"[msisdn]\",\"channelId\":\"WEBSITE\",\"btChannelId\":\"2\"}"
+  },
+
+  "token": {
+    "METHOD" : "POST",
+    "URL" : "https://web.vodafone.com.eg/services/security/oauth/oauth/token",
+    "HEADERS" : {
+            "Host": "web.vodafone.com.eg",
+            "Origin":"https://web.vodafone.com.eg",
+            "msisdn":"",
+            "api-host":"token",
+            "User-Agent":"[ua]",
+            "Content-Type":"application/x-www-form-urlencoded",
+            "Accept":"application/json",
+            "access-token":"",
+            "Referer":"https://web.vodafone.com.eg/ar/mymanagement",
+            "Accept-Encoding":"gzip, deflate",
+            "Accept-Language":"en-US,en;q=0.9",
+            "Cookie":"[cookie]"
+        },
+    "PAYLOAD" : "username=[msisdn]&grant_type=password&client_id=my-trusted-client&client_secret=secret"
+  }
+
+}
